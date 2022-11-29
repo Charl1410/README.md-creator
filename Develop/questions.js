@@ -5,7 +5,7 @@ const inquirer = require('inquirer');
 inquirer.prompt ([
     {
         type: 'input',
-        message: 'what would you like you project title to be?',
+        message: 'what would you like you project title to be called?',
         name: 'project_name',
         
     },
@@ -26,7 +26,7 @@ inquirer.prompt ([
     {
         type: 'input',
         message: 'Provide example images (please provide the permalink to the file)',
-        name: 'screenshot links',
+        name: 'screenshot_links',
         
     },
 
@@ -41,13 +41,17 @@ inquirer.prompt ([
         type: 'list',
         message: 'which licence has been used?',
         choices: ['Apache License v2.0', 'GNU General Public License v3.0', 'MIT License'],
-        name: 'collaborators',
+        name: 'licence',
         
     },
     
     
 ])
+    .then(response => {
+        console.log(response)
+    })
 
 
-
-const questions = [];
+module.exports = {
+    questions
+}
