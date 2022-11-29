@@ -1,13 +1,14 @@
 
 // TODO: Include packages needed for this application
 const fs = require('fs');
-const questions = require('./questions')
+const questions = require('./questions');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 
 // TODO: Create a function to write README file
-function writeToFile (data) {
-    console.log(data);
-    fs.writeFile('README.md', data), (error) =>
+function writeToFile (template) {
+    console.log(template);
+    fs.writeFile('README.md', template), (error) =>
     error ? console.log('error') : console.log('done');
     
 }
@@ -15,6 +16,27 @@ function writeToFile (data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt ([
+        {
+            type: 'input',
+            message: 'what is your Github username?',
+            name: 'github_name',
+            
+        },
+
+        {
+            type: 'input',
+            message: 'Please provide a link to your Github profile',
+            name: 'github_profile_link',
+            
+        },
+
+        {
+            type: 'input',
+            message: 'Please enter your email',
+            name: 'email',
+            
+        },
+        
         {
             type: 'input',
             message: 'what would you like you project title to be called?',
@@ -38,16 +60,24 @@ function init() {
         {
             type: 'input',
             message: 'Provide example images (please provide the permalink to the file )',
-            name: 'screenshot_links',
+            name: 'usage',
             
         },
     
         {
             type: 'input',
             message: 'List your collaborators, if any, with links to their GitHub profiles',
-            name: 'collaborators',
+            name: 'contributing',
             
         },
+        
+        {
+            type: 'input',
+            message: 'Please provide instructions for usage',
+            name: 'test_instructions',
+            
+        },
+
     
         {
             type: 'list',
@@ -60,8 +90,10 @@ function init() {
         
     ])
         .then(response => {
-            writeToFile(response)
+            generateMarkdown(response)
         })
+
+    //generateMarkdown(response)
 }
 // Function call to initialize app
 init();
