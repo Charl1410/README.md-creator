@@ -12,16 +12,22 @@ function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  const template =  `# ${data.title}
+  const template =  `
+  * [Instilation](#Instilation)
+  * [Usage](#Contributing)
+  * [Instilation](#Licence)
+  * [Instilation](#Questions)
+  
+  # ${data.title}
    ## Description ${data.description} 
   ## Initialisation ${data.initialisation} 
   ## Usage ![](${data.usage})
   ## Contributing ${data.contributing}
   ## Licence ${data.licence}
-  ## Questions ${data.github_name} \n GitHub profile: ${data.github_profile_link} email: ${data.email}`;
+  ## Questions ${data.github_name} \n GitHub profile: ${data.github_profile_link} \n email: ${data.email}`;
   
 
-  writeToFile(template)
+  writeToFile(template);
 }
 
 module.exports = generateMarkdown;
