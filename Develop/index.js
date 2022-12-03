@@ -1,15 +1,23 @@
 
 // TODO: Include packages needed for this application
 const fs = require('fs');
-const questions = require('./questions');
+const inquirer = require('inquirer')
 const generateMarkdown = require('./utils/generateMarkdown');
 
 
 // TODO: Create a function to write README file
 function writeToFile (template) {
-    console.log(template);
-    fs.writeFile('README.md', template), (error) =>
-    error ? console.log('error') : console.log('done');
+
+    // fs.writeFileSync(path.join(process.cwd(),fileName), data);
+    
+
+    fs.writeFileSync("README.md", template, (error) =>
+     error ? console.log('error') : console.log('done'));
+
+
+    // console.log(template);
+    // fs.writeFile('README.md', template), (error) =>
+    // error ? console.log('error') : console.log('done');
     
 }
 
@@ -82,7 +90,7 @@ function init() {
         {
             type: 'list',
             message: 'which licence has been used?',
-            choices: ['Apache License v2.0', 'GNU General Public License v3.0', 'MIT License'],
+            choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'],
             name: 'licence',
             
         },
@@ -90,7 +98,8 @@ function init() {
         
     ])
         .then(response => {
-            generateMarkdown(response)
+           const markdown = generateMarkdown(response)
+           writeToFile(markdown)
         })
 
     //generateMarkdown(response)

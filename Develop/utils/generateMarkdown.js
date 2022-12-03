@@ -27,7 +27,7 @@ function generateMarkdown(data) {
   ## Questions ${data.github_name} \n GitHub profile: ${data.github_profile_link} \n email: ${data.email}`;
   
 
-  writeToFile(template);
+  return(template);
 }
 
 module.exports = generateMarkdown;
