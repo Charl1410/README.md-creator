@@ -89,9 +89,9 @@ function init() {
     
         {
             type: 'list',
-            message: 'which licence has been used?',
+            message: 'which license has been used?',
             choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'],
-            name: 'licence',
+            name: 'license',
             
         },
         
