@@ -17,6 +17,7 @@ function renderLicenseBadge(license) {
   
 }
 
+
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !==  'None') {
@@ -29,37 +30,50 @@ function renderLicenseSection(license) {
 
 function generateMarkdown(data) {
   const template =  `
-  # ${data.title}
-  ${renderLicenseBadge(data.license)}
+  # ${data.title} ${renderLicenseBadge(data.license)}
 
+  ## Table of contents
+
+  * [Description](#Description)
   * [Instilation](#Instilation)
+  * [Usage](#Usage)
   * [Contributors](#Contributing)
+  * [Tests](#Tests)
   * [Lisence](#License)
   * [Questions](#Questions)
   
-   ## Description
+  
+  ## Description
    
    ${data.description} 
 
+ 
   ## Initialisation
   
   ${data.initialisation} 
 
   ## Usage 
   
-  ![](${data.usage})
+  ${data.usage}
 
   ## Contributing 
   
   ${data.contributing}
 
+  ## Tests
+
   
   ${renderLicenseSection(data.license)}
 
   ## Questions 
+
+  Any questions about the current project please visit:
   
   Github name: ${data.github_name} 
+
   GitHub profile: ${data.github_profile_link} 
+
+  or contact
   email: ${data.email}`;
   
 
@@ -67,3 +81,4 @@ function generateMarkdown(data) {
 }
 
 module.exports = generateMarkdown;
+

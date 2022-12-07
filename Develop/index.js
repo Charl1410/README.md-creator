@@ -67,7 +67,7 @@ function init() {
     
         {
             type: 'input',
-            message: 'Provide example images (please provide the permalink to the file )',
+            message: 'Provide example video (please provide the link to the video)',
             name: 'usage',
             
         },
