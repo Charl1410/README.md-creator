@@ -25,7 +25,7 @@ The purpose of this project was to create a command line application using the i
  
  ## Initialisation
   
-This project requires node.js and the inquirer package to be installed. Furthermore, to run the questions node index.js should be run in the terminal 
+This project requires node.js and the inquirer package to be installed. To initialise the questions node index.js should be run in the terminal.
 
   ## Usage 
   Please follow the link to access the walkthrough video!
@@ -42,7 +42,8 @@ This project requires node.js and the inquirer package to be installed. Furtherm
 
   ## License
     
-  This project was licensed with the MIT license. This was not actually licenced by MIT but used as an example to generate the badge.
+  This project was licensed with the MIT license. 
+  (This was not actually licenced by MIT but used as an example to generate the badge)
 
   ## Questions 
 
