@@ -42,7 +42,7 @@ This project requires node.js and the inquirer package to be installed. Furtherm
 
   ## License
     
-  This project was licensed with the MIT license
+  This project was licensed with the MIT license. This was not actually licenced by MIT but used as an example to generate the badge.
 
   ## Questions 
 
