@@ -1,12 +1,18 @@
-  # README.md-generator
-  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-  * [Installation](#Installation)
+  # README-generator [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+  ## Table of contents
+
+  * [Description](#Description)
+  * [Instilation](#Instilation)
+  * [Usage](#Usage)
   * [Contributors](#Contributing)
+  * [Tests](#Tests)
   * [Lisence](#License)
   * [Questions](#Questions)
   
-   ## Description
+  
+  ## Description
    
 The purpose of this project was to create a command line application using the inquirer package that accepts user input. Criteria includes:
 
@@ -16,35 +22,35 @@ The purpose of this project was to create a command line application using the i
 * The README displays entered GitHub name and a link to the GitHub profile within a Questions sections
 * When an email is entered then this is added to the same Questions section, with instructions on how to reach me with additional questions 
 * When the links in the Table of Contents section are clicked then it takes me to the corresponding section of the README
-
-
-
-  ## Initialisation
-  
-- Node.js 
-- Inquirer.js @8.2.4
-- To run the application in the command line please run: node index.js 
-
  
+ ## Initialisation
+  
+This project requires node.js and the inquirer package to be installed. Furthermore, to run the questions node index.js should be run in the terminal 
 
   ## Usage 
-    Please follow the link to access the walkthrough video!
-
+  Please follow the link to access the walkthrough video!
 
   https://drive.google.com/file/d/1IdXIo4KARg3HO_6hfYdxkK6ltTFZv42Q/preview
 
   ## Contributing 
   
-N/A
-  
+  N/A
+
+  ## Tests
+
+  N/A
+
   ## License
     
-    N/A
+  This project was licensed with the MIT license
 
   ## Questions 
+
+  Any questions about the current project please visit:
   
-  Github name: Charl1410
-  GitHub profile link: https://github.com/Charl1410
+  Github name: Charl1410 
+
+  GitHub profile link: https://github.com/Charl1410 
+
+  or contact
   email: charlottegriffinn@hotmail.com
-
-
