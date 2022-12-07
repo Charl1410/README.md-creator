@@ -14,17 +14,23 @@
   
   ## Description
    
-   This project was created as a command line application to generate professional README.md files using node.js and the inquirer package 
+The purpose of this project was to create a command line application using the inquirer package that accepts user input. Criteria includes:
 
+* When the user runs the application and enters their responses then a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+* When a title, description, installation instructions, usage information, contribution guidelines, and test instructions are entered this will be added to appropriate sections of the README
+* When a licence is chosen then the corresponding badge is added to the top and the licence section is generated that explains which license the application is covered under 
+* The README displays entered GitHub name and a link to the GitHub profile within the Questions section
+* When an email is entered then this is added to the same Questions section, with instructions on how to reach me with additional questions 
+* When the links in the Table of Contents section are clicked then it takes me to the corresponding section of the README
  
-  ## Initialisation
+ ## Initialisation
   
-  To run this project node.js must be installed which can be done in the browser. Further, the inquirer package version 8.2.4 needs to be installed. To run the project node index.js needs to be run in the terminal 
+This project requires node.js and the inquirer package to be installed. To initialise the questions node index.js should be run in the terminal.
 
   ## Usage 
   Please follow the link to access the walkthrough video!
 
-  
+  https://vimeo.com/778858973/d347c0dfc4
 
   ## Contributing 
   
@@ -36,7 +42,8 @@
 
   ## License
     
-    This project was licensed with the MIT license
+  This project was licensed with the MIT license. 
+  (This was not actually licenced by MIT but used as an example to generate the badge)
 
   ## Questions 
 
@@ -44,7 +51,7 @@
   
   Github name: Charl1410 
 
-  GitHub profile: htpps://github.com/Charl1410 
+  GitHub profile link: https://github.com/Charl1410 
 
   or contact
   email: charlottegriffinn@hotmail.com
