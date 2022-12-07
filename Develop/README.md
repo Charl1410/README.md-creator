@@ -30,7 +30,7 @@ This project requires node.js and the inquirer package to be installed. Furtherm
   ## Usage 
   Please follow the link to access the walkthrough video!
 
-  https://drive.google.com/file/d/1IdXIo4KARg3HO_6hfYdxkK6ltTFZv42Q/preview
+  https://vimeo.com/778858973/d347c0dfc4
 
   ## Contributing 
   
