@@ -62,7 +62,8 @@ function generateMarkdown(data) {
 
   ## Tests
 
-  
+  ${data.test_instructions}
+
   ${renderLicenseSection(data.license)}
 
   ## Questions 
